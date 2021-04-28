@@ -77,7 +77,6 @@ elif eligio=="4":
 
 """)
     print("\033[39m")
-    subprocess.call(['cd', 'herramientas'],shell=True)
     IP = input("Introduce la IP: ")
     command_line5 = 'python hammer.py -s' + IP + ' -p 80 -t 135'
     args5 = shlex.split(command_line5)
