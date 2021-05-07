@@ -17,7 +17,7 @@ while True:
 ▀█▀ ▄▀▀▄ ▄▀▀▄  █░░   █░█ ▀█▀ ▀█▀
 ░█░ █░░█ █░░█  █░░   █▀▄ ░█░ ░█░
 ░▀░ ░▀▀░ ░▀▀░░ ▀▀▀   ▀░▀ ▀▀▀ ░▀░
-v- 1.2       """)
+v- 1.2.1       """)
     print("Codded by; @Jm")
     print("\033[32m")
     print("""
@@ -60,7 +60,7 @@ v- 1.2       """)
 ██████╔╝██████╔╝╚█████╔╝██████╔╝
 ╚═════╝░╚═════╝░░╚════╝░╚═════╝░
 (ROOT)            """)
-        print("\033[39m")
+        aprint("\033[39m")
         subprocess.call(['cd', 'herramientas'],shell=True)
         enlace = input("\nIntroduce el enlace (Sin Http/https): ")
         command_line2 = 'python pyddos.py -d' + enlace + '-p 80 -T 5000 -Pyslow'
@@ -166,13 +166,14 @@ v- 1.2       """)
             nombre = input("Introduce el nombre: ")
             subprocess.call(['clear'],shell=True)
             subprocess.call(['python sherlock.py ' + nombre],shell=True)
+            break
         elif eleccion=="2":
             telef = input("Introduce el número(Ej:+34722313200): ")
             subprocess.call(['cd PhoneInfoga && python phoneinfoga.py -n '+ telef],shell=True)
-
+            break
         elif eleccion=="3":
             subprocess.call(['cd IP-Tracker && python2 IP-Tracker.py'],shell=True)
-            
+            break
     elif eligio =="0":
         subprocess.call(['clear'],shell=True)
         print("\033[36m")
