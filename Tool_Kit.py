@@ -45,10 +45,13 @@ v- 1.2.1       """)
     ▀▀░ ▀░░ ▀░▀ ▀░░░▀
 
     """)
-        numero = input("Introduce el número de telefono(Ej: 34920123987): ")
         subprocess.call(['pip install -r requirements.txt'],shell=True)
-        subprocess.call(['python quack --target ' + numero + ' --tool SMS --timeout 3600 --threads 50'],shell=True)
+        print("""
 
+                """)
+        numero = input("Introduce el número de telefono(Ej: 34920123987): ")
+        subprocess.call(['cd quack-hammer-sherlock && python quack --target ' + numero + ' --tool SMS --timeout 3600 --threads 50'],shell=True)
+        break 
     elif eligio=="3":
         subprocess.call(['clear'],shell=True)
         print("\033[35m")
@@ -80,9 +83,8 @@ v- 1.2.1       """)
 """)
         print("\033[39m")
         IP = input("Introduce la IP: ")
-        command_line5 = 'python hammer.py -s' + IP + ' -p 80 -t 135'
-        args5 = shlex.split(command_line5)
-        subprocess.call(args5)
+
+        subprocess.call(['cd quack-hammer-sherlock && python hammer.py -s' + IP + ' -p 80 -t 135'],shell=True)
         time.sleep(5)
 
     elif eligio=="5":
@@ -148,7 +150,8 @@ v- 1.2.1       """)
             print("")
 
         else:
-            print("Opción no válida")
+            time.sleep(1.5)
+            print("\033[31m Error-> opción incorrecta")
     elif eligio=="6":
         subprocess.call(['clear'],shell=True)
         subprocess.call(['neofetch'],shell=True)
@@ -165,15 +168,23 @@ v- 1.2.1       """)
                """)
             nombre = input("Introduce el nombre: ")
             subprocess.call(['clear'],shell=True)
-            subprocess.call(['python sherlock.py ' + nombre],shell=True)
+            subprocess.call(['cd quack-hammer-sherlock && python sherlock.py ' + nombre],shell=True)
             break
         elif eleccion=="2":
+            print(""" 
+
+                    """)
             telef = input("Introduce el número(Ej:+34722313200): ")
             subprocess.call(['cd PhoneInfoga && python phoneinfoga.py -n '+ telef],shell=True)
             break
         elif eleccion=="3":
             subprocess.call(['cd IP-Tracker && python2 IP-Tracker.py'],shell=True)
             break
+        elif eleccion=="4":
+            print("")
+        else: 
+            print("\033[31m Error-> opción incorrecta")
+            time.sleep(1.5)
     elif eligio =="0":
         subprocess.call(['clear'],shell=True)
         print("\033[36m")
@@ -217,6 +228,7 @@ v- 1.2.1       """)
         time.sleep(1.5)
         break
     else:
-        print("Opción no válida")
+        print("\033[31m Error-> opción incorrecta")
+        time.sleep(1.5)
 
 
