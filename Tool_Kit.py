@@ -17,7 +17,7 @@ while True:
 ▀█▀ ▄▀▀▄ ▄▀▀▄  █░░   █░█ ▀█▀ ▀█▀
 ░█░ █░░█ █░░█  █░░   █▀▄ ░█░ ░█░
 ░▀░ ░▀▀░ ░▀▀░░ ▀▀▀   ▀░▀ ▀▀▀ ░▀░
-v- 1.2.1       """)
+v- 1.3       """)
     print("Codded by; @Jm")
     print("\033[32m")
     print("""
@@ -156,8 +156,9 @@ v- 1.2.1       """)
         subprocess.call(['clear'],shell=True)
         subprocess.call(['neofetch'],shell=True)
         print("""
-    [1] Sherlock(usuarios)          [2] PhoneInfoga
-    [3] Ip-tracker                  [4] Volver                                                                         """)
+    [1] Sherlock(usuarios)      [2] Ip-tracker         
+    [3] Volver
+    """)
         eleccion = input("Introduce la opción: ")
         if eleccion=="1":
             print("""
@@ -171,16 +172,9 @@ v- 1.2.1       """)
             subprocess.call(['cd quack-hammer-sherlock && python sherlock.py ' + nombre],shell=True)
             break
         elif eleccion=="2":
-            print(""" 
-
-                    """)
-            telef = input("Introduce el número(Ej:+34722313200): ")
-            subprocess.call(['cd PhoneInfoga && python phoneinfoga.py -n '+ telef],shell=True)
+            subprocess.call(['python2 IP-Tracker.py'],shell=True)
             break
         elif eleccion=="3":
-            subprocess.call(['cd IP-Tracker && python2 IP-Tracker.py'],shell=True)
-            break
-        elif eleccion=="4":
             print("")
         else: 
             print("\033[31m Error-> opción incorrecta")
