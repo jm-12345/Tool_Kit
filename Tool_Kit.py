@@ -17,14 +17,14 @@ while True:
 ▀█▀ ▄▀▀▄ ▄▀▀▄  █░░   █░█ ▀█▀ ▀█▀
 ░█░ █░░█ █░░█  █░░   █▀▄ ░█░ ░█░
 ░▀░ ░▀▀░ ░▀▀░░ ▀▀▀   ▀░▀ ▀▀▀ ░▀░
-v- 1.3       """)
+v- 1.4       """)
     print("Codded by; @Jm")
     print("\033[32m")
     print("""
     [1] Instalador de paquetes      [4] Ataques DDoS(No root)
     [2] Herramientas de spam        [5] Metasploit
     [3] Ataques DDoS(root)          [6] Extractores de información
-               
+    [7] Actualizar Tool Kit         
                             [0] Salir
     """)
     print("\033[33m")
@@ -179,6 +179,11 @@ v- 1.3       """)
         else: 
             print("\033[31m Error-> opción incorrecta")
             time.sleep(1.5)
+    elif eligio =="7":
+        subprocess.call(['mv actualizar.py ..'],shell=True)
+        subprocess.call(['cd .. && python  actualizar.py..'],shell=True)
+        break
+
     elif eligio =="0":
         subprocess.call(['clear'],shell=True)
         print("\033[36m")
