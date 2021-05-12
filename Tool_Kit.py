@@ -23,8 +23,7 @@ v- 1.3     """)
     print("""
     [1] Instalador de paquetes      [4] Ataques DDoS(No root)
     [2] Herramientas de spam        [5] Metasploit
-    [3] Ataques DDoS(root)          [6] Extractores de información
-    [7] Actualizar Tool Kit         
+    [3] Ataques DDoS(root)          [6] Extractores de información         
                             [0] Salir
     """)
     print("\033[33m")
