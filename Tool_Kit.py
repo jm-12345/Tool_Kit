@@ -24,8 +24,8 @@ v- 1.3     """)
     [1] Instalador de paquetes      [4] Ataques DDoS(No root)
     [2] Herramientas de spam        [5] Metasploit
     [3] Ataques DDoS(root)          [6] Extractores de información         
-                            [0] Salir
-    """)
+                            
+                           [0] Salir """)
     print("\033[33m")
     eligio=input("-Selecciona la herramienta: ")
     print("\033[39m") 
@@ -48,9 +48,10 @@ v- 1.3     """)
         print("""
 
                 """)
+        print("Pulsa enter para salir")
         numero = input("Introduce el número de telefono(Ej: 34920123987): ")
         subprocess.call(['cd quack-hammer-sherlock && python quack --target ' + numero + ' --tool SMS --timeout 3600 --threads 50'],shell=True)
-        break 
+    
     elif eligio=="3":
         subprocess.call(['clear'],shell=True)
         print("\033[35m")
@@ -172,7 +173,7 @@ v- 1.3     """)
             break
         elif eleccion=="2":
             subprocess.call(['python2 IP-Tracker.py'],shell=True)
-            break
+            
         elif eleccion=="3":
             print("")
         else: 
