@@ -17,7 +17,7 @@ while True:
 ▀█▀ ▄▀▀▄ ▄▀▀▄  █░░   █░█ ▀█▀ ▀█▀
 ░█░ █░░█ █░░█  █░░   █▀▄ ░█░ ░█░
 ░▀░ ░▀▀░ ░▀▀░░ ▀▀▀   ▀░▀ ▀▀▀ ░▀░
-v- 1.4       """)
+v- 1.3     """)
     print("Codded by; @Jm")
     print("\033[32m")
     print("""
@@ -179,10 +179,6 @@ v- 1.4       """)
         else: 
             print("\033[31m Error-> opción incorrecta")
             time.sleep(1.5)
-    elif eligio =="7":
-        subprocess.call(['mv actualizar.py ..'],shell=True)
-        subprocess.call(['cd .. && python  actualizar.py ..'],shell=True)
-        break
 
     elif eligio =="0":
         subprocess.call(['clear'],shell=True)
