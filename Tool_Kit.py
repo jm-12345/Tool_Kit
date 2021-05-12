@@ -181,7 +181,7 @@ v- 1.4       """)
             time.sleep(1.5)
     elif eligio =="7":
         subprocess.call(['mv actualizar.py ..'],shell=True)
-        subprocess.call(['cd .. && python  actualizar.py..'],shell=True)
+        subprocess.call(['cd .. && python  actualizar.py ..'],shell=True)
         break
 
     elif eligio =="0":
