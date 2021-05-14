@@ -24,8 +24,8 @@ v- 1.4     """)
     [1] Instalador de paquetes      [4] Ataques DDoS(No root)
     [2] Herramientas de spam        [5] Metasploit
     [3] Ataques DDoS(root)          [6] Extractores de información         
-    [7] Camhack(Enlaces de camras)                        
-                           
+    [7] Camhack(Enlaces de camras)
+
                             [0] Salir """)
     print("\033[33m")
     eligio=input("-Selecciona la herramienta: ")
@@ -182,7 +182,7 @@ v- 1.4     """)
             time.sleep(1.5)
     elif eligio=="7":
         subprocess.call(['pip install colorama'],shell=True)
-        ubprocess.call(['pip install requests'],shell=True)
+        subprocess.call(['pip install requests'],shell=True)
         subprocess.call(['clear'],shell=True)
         subprocess.call(['cd herramientas && python cam-hackers.py'],shell=True)
         break
