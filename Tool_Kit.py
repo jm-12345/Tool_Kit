@@ -1,7 +1,7 @@
 while True:
     import shlex, subprocess
     import time
-    command_line = ' apt-get install git vim nano clang nmap wget weechat unzip termux-api screenfetch unstable-repo root-repo python bash curl neofetch hydra gzip game-repo fish figlet dpkg dos2unix apt apache2 dnsutils tsu -y'
+    command_line = ' apt-get install git vim nano clang nmap wget weechat unzip termux-api screenfetch unstable-repo root-repo python bash curl neofetch hydra gzip game-repo fish figlet dpkg dos2unix apt apache2 dnsutils tsu pip -y'
     args = shlex.split(command_line)
 
     command_line3 = ' pkg uninstall ruby -y'
@@ -181,6 +181,8 @@ v- 1.4     """)
             print("\033[31m Error-> opción incorrecta")
             time.sleep(1.5)
     elif eligio=="7":
+        subprocess.call(['pip install colorama'],shell=True)
+        ubprocess.call(['pip install requests'],shell=True)
         subprocess.call(['clear'],shell=True)
         subprocess.call(['cd herramientas && python cam-hackers.py'],shell=True)
         break
