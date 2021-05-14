@@ -17,15 +17,16 @@ while True:
 ▀█▀ ▄▀▀▄ ▄▀▀▄  █░░   █░█ ▀█▀ ▀█▀
 ░█░ █░░█ █░░█  █░░   █▀▄ ░█░ ░█░
 ░▀░ ░▀▀░ ░▀▀░░ ▀▀▀   ▀░▀ ▀▀▀ ░▀░
-v- 1.3     """)
+v- 1.4     """)
     print("Codded by; @Jm")
     print("\033[32m")
     print("""
     [1] Instalador de paquetes      [4] Ataques DDoS(No root)
     [2] Herramientas de spam        [5] Metasploit
     [3] Ataques DDoS(root)          [6] Extractores de información         
-                            
-                           [0] Salir """)
+    [7] Camhack(Enlaces de camras)                        
+                           
+                            [0] Salir """)
     print("\033[33m")
     eligio=input("-Selecciona la herramienta: ")
     print("\033[39m") 
@@ -179,7 +180,10 @@ v- 1.3     """)
         else: 
             print("\033[31m Error-> opción incorrecta")
             time.sleep(1.5)
-
+    elif eligio=="7":
+        subprocess.call(['clear'],shell=True)
+        subprocess.call(['cd herramientas && python cam-hackers.py'],shell=True)
+        break
     elif eligio =="0":
         subprocess.call(['clear'],shell=True)
         print("\033[36m")
