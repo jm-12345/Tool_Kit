@@ -188,8 +188,33 @@ v- 1.6     """)
         break
     elif eligio =="8":
         subprocess.call(['clear'],shell=True)
-        subprocess.call(['cd quack-hammer-sherlock && bash socialphish.sh'],shell=True)
-        break
+        print("""
+             _     _     _     _
+       _ __ | |__ (_)___| |__ (_)_ __   __ _
+      | '_ \| '_ \| / __| '_ \| | '_ \ / _` |
+      | |_) | | | | \__ \ | | | | | | | (_| |
+      | .__/|_| |_|_|___/_| |_|_|_| |_|\__, |
+      |_|                              |___/
+
+
+        1) Generar enlace 2) Mirar datos obtenidos  
+                """)
+        num_elegido=input("Elige una opción: ")
+        if num_elegido == "1":
+            subprocess.call(['clear'],shell=True)
+            subprocess.call(['cd quack-hammer-sherlock && bash socialphish.sh'],shell=True)
+            break
+
+        elif num_elegido =="2":
+            subprocess.call(['cd quack-hammer-sherlock/sites/instagram && cat saved.ip.txt && cat saved.usernames.txt'],shell=True)
+            print("\033[32m")
+            salir = input("Presiona enter para salir")
+            if salir == "salir":
+                print(" ")
+
+            else:
+                print(" ")
+
 
     elif eligio =="0":
         subprocess.call(['clear'],shell=True)
