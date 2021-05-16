@@ -24,8 +24,7 @@ v- 1.6     """)
     [1] Instalador de paquetes      [4] Ataques DDoS(No root)
     [2] Herramientas de spam        [5] Metasploit
     [3] Ataques DDoS(root)          [6] Extractores de información         
-    [7] Camhack(Enlaces de camras)  [8] Phishing 
-    [9] Actualizar Tool Kit
+    [7] Camhack(Enlaces de camras)  [8] Phishing
 
                             [0] Salir """)
     print("\033[33m")
@@ -215,12 +214,6 @@ v- 1.6     """)
 
             else:
                 print(" ")
-
-    elif eligio =="9":
-        subprocess.call(['clear'],shell=True)
-        subprocess.call(['mv actualizar.py ..'],shell=True)
-        subprocess.call(['cd .. && python actualizar.py'],shell=True)
-        break
 
     elif eligio =="0":
         subprocess.call(['clear'],shell=True)
