@@ -12,9 +12,9 @@ seguridad.
 
 pkg install git python
 
-git clone 
+git clone https://github.com/jm-12345/Tool_Kit.git
 
-chmod +x Tool_Kit.py 
+cd Tool_Kit
 
 python Tool_Kit.py
 
@@ -29,5 +29,9 @@ Metasploit: Da soluciones a error de ruby lo instala y enseña a utilizar la her
 Ataques DDoS: Envía paquetes a una ip introducida para colapsar la red (Hay versión root y no root)
 
 Sherlock: Revisa redes sociales para encontrar nombres de usuario.
+
+Extractores de información: Extrae información pública de un telefono una ip o un nombre de usuario
+
+Phishing: Herramienta para extraer contraseñas mediante ingeniería social y incluye un acortador de links
 
 

